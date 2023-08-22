@@ -1,6 +1,5 @@
 'use client'
 
-import Patterns from '@components/Patterns'
 import Link from 'next/link';
 
 import { Button } from 'flowbite-react';
@@ -14,7 +13,6 @@ const Home = () => {
             <Button pill size="lg"><Link href="/patterns">Get A Free Pattern</Link></Button>
             <Button outline pill size="lg"><Link href="/guides">Start Learning</Link></Button>
         </div>
-        <Patterns />
     </section>
   )
 }

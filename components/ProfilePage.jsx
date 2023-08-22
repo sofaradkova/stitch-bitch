@@ -2,7 +2,6 @@
 
 import TabsWithUnderline from "./TabsWithUnderline"
 
-
 const ProfilePage = ({name}) => {
   return (
     <section className="w-full">

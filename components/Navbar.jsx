@@ -13,7 +13,7 @@ const Navbar = () => {
 
         if (session) {
             return (
-                <div className="navbar bg-base-100">
+                <div className="navbar bg-base-100 top-0 w-full sticky">
             <div className="navbar-start">
               <div className="dropdown">
                 <label tabIndex={0} className="btn btn-ghost lg:hidden">

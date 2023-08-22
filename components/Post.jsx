@@ -2,14 +2,11 @@
 
 import { Label, Radio, TextInput, Textarea, Button, FileInput } from 'flowbite-react';
 
-const Post = ({ action }) => {
+const Post = ({ action, post, setPost, handleSubmit }) => {
   return (
     <section className="w-full flex flex-col items-center">
         <h1 className="text-left head_text mb-4">{action} Pattern</h1>
-        <form className="flex max-w-md flex-col gap-4">
-            <div>
-                
-            </div>
+        <form className="flex max-w-md flex-col gap-4" onSubmit={handleSubmit}>
             <div>
                 <div className="mb-2 block">
                 <Label
@@ -19,6 +16,8 @@ const Post = ({ action }) => {
                 </div>
                 <TextInput
                 id="name"
+                value={post.name}
+                onChange={(e) => setPost({ ...post, name: e.target.value })}
                 required
                 shadow
                 type="text"
@@ -36,6 +35,8 @@ const Post = ({ action }) => {
             </div>
             <Textarea
                 id="description"
+                value={post.description}
+                onChange={(e) => setPost({ ...post, description: e.target.value })}
                 placeholder="Tell us about your project"
                 required
                 rows={4}
@@ -50,6 +51,8 @@ const Post = ({ action }) => {
                 </div>
                 <TextInput
                 id="pattern"
+                value={post.patternlink}
+                onChange={(e) => setPost({ ...post, patternlink: e.target.value })}
                 required
                 shadow
                 type="text"
@@ -62,7 +65,7 @@ const Post = ({ action }) => {
                     <div className="mb-2 block">
                         <Label
                         htmlFor="photosfile"
-                        value="Add photos of your final product"
+                        value="Add a photo of your final product"
                         />
                     </div>
                     <FileInput
