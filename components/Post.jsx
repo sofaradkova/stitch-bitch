@@ -2,9 +2,9 @@
 
 import { Label, Radio, TextInput, Textarea, Button, FileInput } from 'flowbite-react';
 
-const Post = ({ action, post, setPost, handleSubmit }) => {
+const Post = ({ action, post, setPost, submitting, handleSubmit }) => {
   return (
-    <section className="w-full flex flex-col items-center">
+    <section className="w-full flex flex-col items-center mb-20">
         <h1 className="text-left head_text mb-4">{action} Pattern</h1>
         <form className="flex max-w-md flex-col gap-4" onSubmit={handleSubmit}>
             <div>
@@ -51,8 +51,8 @@ const Post = ({ action, post, setPost, handleSubmit }) => {
                 </div>
                 <TextInput
                 id="pattern"
-                value={post.patternlink}
-                onChange={(e) => setPost({ ...post, patternlink: e.target.value })}
+                value={post.patternLink}
+                onChange={(e) => setPost({ ...post, patternLink: e.target.value })}
                 required
                 shadow
                 type="text"
@@ -76,12 +76,13 @@ const Post = ({ action, post, setPost, handleSubmit }) => {
             className="flex max-w-md justify-around gap-4"
             id="radio"
             >
-                <div className="flex flex-col gap-4">
                     <div className="flex items-center gap-2">
                         <Radio
                         id="crochet"
                         name="categories"
                         value="Crochet"
+                        checked={post.patternType === "Crochet"}
+                        onChange={(e) => setPost({ ...post, patternType: e.target.value })}
                         />
                         <Label htmlFor="crochet">
                         Crochet
@@ -92,35 +93,25 @@ const Post = ({ action, post, setPost, handleSubmit }) => {
                         id="knit"
                         name="categories"
                         value="Knit"
+                        checked={post.patternType === "Knit"}
+                        onChange={(e) => setPost({ ...post, patternType: e.target.value })}
                         />
                         <Label htmlFor="knit">
                         Knit
                         </Label>
                     </div>
-                </div>
-            <div className="flex flex-col gap-4">
                 <div className="flex items-center gap-2">
                     <Radio
                     id="sew"
                     name="categories"
                     value="Sew"
+                    checked={post.patternType === "Sew"}
+                    onChange={(e) => setPost({ ...post, patternType: e.target.value })}
                     />
                     <Label htmlFor="sew">
                     Sew
                     </Label>
                 </div>
-                <div className="flex items-center gap-2">
-                    <Radio
-                    id="embroider"
-                    name="categories"
-                    value="Embroider"
-                    />
-                    <Label htmlFor="embroider">
-                    Embroider
-                    </Label>
-                </div>
-            </div>
-            
             </fieldset>
             
             <Button type="submit" className="bg-green-700">

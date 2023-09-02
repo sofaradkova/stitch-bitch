@@ -1,8 +1,10 @@
 'use client';
 
 import { Accordion, Progress } from 'flowbite-react';
+import Videos from '@components/Videos'
 
 const CrochetGuide = () => {
+
   return (
     <section className="w-full">
         <h1 className="text-left head_text">Crochet Pathway</h1>
@@ -23,7 +25,7 @@ const CrochetGuide = () => {
                     Step 1 - Learn about hooks, yarn & gather the materials
                 </Accordion.Title>
                 <Accordion.Content>
-                    blabal
+                    <Videos query="choose+crochet+materials" />
                 </Accordion.Content>
                 </Accordion.Panel>
                 <Accordion.Panel>
@@ -31,7 +33,7 @@ const CrochetGuide = () => {
                     Step 2 - Learn how to hold the hook
                 </Accordion.Title>
                 <Accordion.Content>
-                    balba
+                    <Videos query="how+to+hold+crochet+hook" />
                 </Accordion.Content>
                 </Accordion.Panel>
                 <Accordion.Panel>
@@ -39,7 +41,7 @@ const CrochetGuide = () => {
                     Step 3 - Practice chaining
                 </Accordion.Title>
                 <Accordion.Content>
-                    ebfiv
+                    <Videos query="crochet+chain" />  
                 </Accordion.Content>
                 </Accordion.Panel>
                 <Accordion.Panel>
@@ -47,7 +49,7 @@ const CrochetGuide = () => {
                     Step 4 - Single crochet stitch
                 </Accordion.Title>
                 <Accordion.Content>
-                    ebfiv
+                    <Videos query="single+crochet" />
                 </Accordion.Content>
                 </Accordion.Panel>
                 <Accordion.Panel>
@@ -55,7 +57,7 @@ const CrochetGuide = () => {
                     FIRST PROJECT - Make a pot holder
                 </Accordion.Title>
                 <Accordion.Content>
-                    ebfiv
+                    <Videos query="crochet+pot+holder" />
                 </Accordion.Content>
                 </Accordion.Panel>
             </Accordion>
@@ -77,7 +79,7 @@ const CrochetGuide = () => {
                     Step 5 - Double crochet stitch
                 </Accordion.Title>
                 <Accordion.Content>
-                    blabal
+                    <Videos query="double+crochet" />
                 </Accordion.Content>
                 </Accordion.Panel>
                 <Accordion.Panel>
@@ -85,7 +87,7 @@ const CrochetGuide = () => {
                     Step 6 - Make a turning chain
                 </Accordion.Title>
                 <Accordion.Content>
-                    blabal
+                    <Videos query="crochet+turning+chain" />
                 </Accordion.Content>
                 </Accordion.Panel>
                 <Accordion.Panel>
@@ -93,7 +95,7 @@ const CrochetGuide = () => {
                     Step 7 - Crochet in the round
                 </Accordion.Title>
                 <Accordion.Content>
-                    balba
+                    <Videos query="crochet+in+round" />
                 </Accordion.Content>
                 </Accordion.Panel>
                 <Accordion.Panel>
@@ -101,7 +103,7 @@ const CrochetGuide = () => {
                     NEXT PROJECT - Crochet a granny square
                 </Accordion.Title>
                 <Accordion.Content>
-                    ebfiv
+                    <Videos query="crochet+granny+square" />
                 </Accordion.Content>
                 </Accordion.Panel>
             </Accordion>
@@ -123,7 +125,7 @@ const CrochetGuide = () => {
                     Step 8 - Learn how to join in new yarn
                 </Accordion.Title>
                 <Accordion.Content>
-                    blabal
+                    <Videos query="how+to+switch+yarn+crochet" />
                 </Accordion.Content>
                 </Accordion.Panel>
                 <Accordion.Panel>
@@ -131,7 +133,7 @@ const CrochetGuide = () => {
                     Step 9 - Learn finishing techniques
                 </Accordion.Title>
                 <Accordion.Content>
-                    balba
+                    <Videos query="crochet+finishing+techniques" />
                 </Accordion.Content>
                 </Accordion.Panel>
                 <Accordion.Panel>
@@ -139,7 +141,7 @@ const CrochetGuide = () => {
                     FINAL PROJECT - Make your own bralette
                 </Accordion.Title>
                 <Accordion.Content>
-                    ebfiv
+                    <Videos query="crochet+beginner+bralette" />
                 </Accordion.Content>
                 </Accordion.Panel>
             </Accordion>

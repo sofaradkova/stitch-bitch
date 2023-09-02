@@ -1,6 +1,7 @@
 'use client';
 
 import { Accordion, Progress } from 'flowbite-react';
+import Videos from '@components/Videos'
 
 const KnitGuide = () => {
   return (
@@ -23,7 +24,7 @@ const KnitGuide = () => {
                     Step 1 - Learn about needles, yarn & gather the materials
                 </Accordion.Title>
                 <Accordion.Content>
-                    blabal
+                <Videos query="choose+knittingt+materials" />
                 </Accordion.Content>
                 </Accordion.Panel>
                 <Accordion.Panel>
@@ -31,7 +32,7 @@ const KnitGuide = () => {
                     Step 2 - Learn how to hold the needles
                 </Accordion.Title>
                 <Accordion.Content>
-                    balba
+                <Videos query="how+to+hold+knitting+needles" />
                 </Accordion.Content>
                 </Accordion.Panel>
                 <Accordion.Panel>
@@ -39,7 +40,7 @@ const KnitGuide = () => {
                     Step 3 - Practice casting on the stitches
                 </Accordion.Title>
                 <Accordion.Content>
-                    ebfiv
+                <Videos query="cast+on+stitches+knitting" />
                 </Accordion.Content>
                 </Accordion.Panel>
                 <Accordion.Panel>
@@ -47,7 +48,7 @@ const KnitGuide = () => {
                     Step 4 - Basic knit stitch
                 </Accordion.Title>
                 <Accordion.Content>
-                    ebfiv
+                <Videos query="basic+knit+stitch" />
                 </Accordion.Content>
                 </Accordion.Panel>
             </Accordion>
@@ -69,7 +70,7 @@ const KnitGuide = () => {
                     Step 5 - Basic purl stitch
                 </Accordion.Title>
                 <Accordion.Content>
-                    ebfiv
+                <Videos query="basic+purl+stitch" />
                 </Accordion.Content>
                 </Accordion.Panel>
                 <Accordion.Panel>
@@ -77,7 +78,7 @@ const KnitGuide = () => {
                     Step 6 - Learn how to cast off the stitches
                 </Accordion.Title>
                 <Accordion.Content>
-                    ebfiv
+                <Videos query="cast+off+stitches" />
                 </Accordion.Content>
                 </Accordion.Panel>
                 <Accordion.Panel>
@@ -85,7 +86,7 @@ const KnitGuide = () => {
                     Step 7 - Learn how to pick up a dropped stitch
                 </Accordion.Title>
                 <Accordion.Content>
-                    ebfiv
+                <Videos query="pick+up+dropped+stitch+knitting" />
                 </Accordion.Content>
                 </Accordion.Panel>
                 <Accordion.Panel>
@@ -93,7 +94,7 @@ const KnitGuide = () => {
                     Step 8 - Learn how to weave in the ends
                 </Accordion.Title>
                 <Accordion.Content>
-                    blabal
+                <Videos query="weave+in+ends+knitting" />
                 </Accordion.Content>
                 </Accordion.Panel>
                 <Accordion.Panel>
@@ -101,7 +102,7 @@ const KnitGuide = () => {
                     FIRST PROJECT - Make a scarf
                 </Accordion.Title>
                 <Accordion.Content>
-                    balba
+                <Videos query="knit+beginner+scarf" />
                 </Accordion.Content>
                 </Accordion.Panel>
             </Accordion>
@@ -123,7 +124,7 @@ const KnitGuide = () => {
                     Step 9 - Learn how to decrease and increase stitches
                 </Accordion.Title>
                 <Accordion.Content>
-                    blabal
+                <Videos query="decrease+increase+stitches+knitting" />
                 </Accordion.Content>
                 </Accordion.Panel>
                 <Accordion.Panel>
@@ -131,7 +132,7 @@ const KnitGuide = () => {
                     Step 10 - Learn how to fix common knitting mistakes
                 </Accordion.Title>
                 <Accordion.Content>
-                    balba
+                <Videos query="fix+common+knitting+mistakes" />
                 </Accordion.Content>
                 </Accordion.Panel>
                 <Accordion.Panel>
@@ -139,7 +140,7 @@ const KnitGuide = () => {
                     FINAL PROJECT - Make your own hat
                 </Accordion.Title>
                 <Accordion.Content>
-                    ebfiv
+                <Videos query="knit+beginner+hat" />
                 </Accordion.Content>
                 </Accordion.Panel>
                 <Accordion.Panel>
@@ -147,7 +148,7 @@ const KnitGuide = () => {
                     Extra - Learn to read knitting patterns
                 </Accordion.Title>
                 <Accordion.Content>
-                    ebfiv
+                <Videos query="how+to+read+knitting+patterns" />
                 </Accordion.Content>
                 </Accordion.Panel>
             </Accordion>

@@ -2,7 +2,11 @@
 
 import { Tabs } from 'flowbite-react';
 
+import { useSession } from 'next-auth/react';
+
 export default function TabsWithUnderline() {
+  const { data: session } = useSession();
+
   return (
     <Tabs.Group
       aria-label="Tabs with underline"

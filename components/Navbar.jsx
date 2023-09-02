@@ -11,9 +11,19 @@ const Navbar = () => {
     const [providers, setProviders] = useState(null);
     const [menuDown, setMenuDown] = useState(false);
 
+    useEffect(() => {
+      const setUpProviders = async () => {
+          const response = await getProviders();
+
+          setProviders(response);
+      }
+
+      setUpProviders();
+    }, [])
+
         if (session) {
             return (
-                <div className="navbar bg-base-100 top-0 w-full sticky">
+                <div className="navbar bg-base-100">
             <div className="navbar-start">
               <div className="dropdown">
                 <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -85,7 +95,14 @@ const Navbar = () => {
                   <li><Link href="/guides" className="rounded-full">Guides</Link></li>
               </ul>
             </div>
-              <button className="btn rounded-full btn-outline" onClick={() => signIn()}>Sign in</button>
+                <>
+                    {providers &&
+                        Object.values(providers).map((provider) => (
+                            <button type="button" key={provider.name} onClick={() => signIn(provider.id)} className="btn rounded-full btn-outline">
+                                Sign In
+                            </button>
+                        ))}
+                </>
             </div>
           </div>
           )
