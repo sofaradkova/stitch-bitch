@@ -4,7 +4,7 @@ import Link from 'next/link';
 import SearchField from '@components/SearchField'
 
 import { Button } from 'flowbite-react';
-import PatternCard from '@components/PatternCard';
+import PatternsFeed from '@components/PatternsFeed';
 
 const Home = () => {
   return (
@@ -15,15 +15,7 @@ const Home = () => {
             <Button pill size="lg"><Link href="/patterns">Get A Free Pattern</Link></Button>
             <Button outline pill size="lg"><Link href="/guides">Start Learning</Link></Button>
         </div>
-        <SearchField />
-        <div className="grid grid-cols-3 gap-4 mb-20">
-            <PatternCard />
-            <PatternCard />
-            <PatternCard />
-            <PatternCard />
-            <PatternCard />
-            <PatternCard />
-        </div>
+        <PatternsFeed />
     </section>
   )
 }

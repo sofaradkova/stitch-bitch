@@ -115,7 +115,7 @@ const Post = ({ action, post, setPost, submitting, handleSubmit }) => {
             </fieldset>
             
             <Button type="submit" className="bg-green-700">
-                Submit
+                {submitting ? `${action}...` : action}
             </Button>
         </form>
     </section>
